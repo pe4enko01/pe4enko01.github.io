@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html class="no-js">
+ <head> 
+  <meta charset="utf-8" /> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> 
+  <title>Купить часы Iron Samurai за 890 рублей - интернет-магазин</title> 
+  <meta name="description" content="" /> 
+  <meta name="viewport" content="width=device-width" /> 
+  <link href="favicon.ico" rel="shortcut icon" /> 
+  <link href="favicon.ico" type="image/x-icon" rel="icon" /> 
+  <link rel="stylesheet" href="css/normalize.min.css" /> 
+  <link rel="stylesheet" href="css/slick.css" /> 
+  <link rel="stylesheet" href="css/royalslider.css" /> 
+  <link rel="stylesheet" href="css/sliderkit-core.css" /> 
+  <link rel="stylesheet" href="css/jquery.fancybox.css" /> 
+  <link rel="stylesheet" href="css/jquery.jqzoom.css" /> 
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/new.css" /> 
+  <!--[if lt IE 9]>
+            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+            <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+        <![endif]--> 
+  <link rel="stylesheet" type="text/css" href="css/jquery-ui.css" /> 
+  <script src="js/jquery-1.10.1.min.js"></script> 
+  <script src="js/slick.min.js"></script> 
+  <script src="js/jquery.royalslider.min.js"></script> 
+  <script src="js/jquery.sliderkit.1.9.2.pack.js"></script> 
+  <script src="js/jquery.easing.1.3.min.js"></script> 
+  <script src="js/jquery.fancybox.pack.js"></script> 
+  <script src="js/jquery.maskedinput.min.js"></script> 
+  <script src="js/jquery.validate.min.js"></script> 
+  <script src="js/countdown.js"></script> 
+  <script src="js/jquery.jqzoom-core.js"></script> 
+  <script src="js/frontend.js"></script> 
+  <script type="text/javascript" src="js/jquery-ui.min.js"></script> 
+  <script type="text/javascript" src="js/jquery.form.min.js"></script>
+  <script>
+	$(document).ready(function() 
+	{
+        $(".submit-form-1").click(function() {
+            $("#ts_1").val(new Date().getTime());
+            var page_charset=window.document.charset;
+            if (!page_charset) page_charset=window.document.characterSet;
+            var ddd = new Date();
+            $("#time_user_1").val(Math.round(ddd.getTime()/1000.0)-ddd.getTimezoneOffset()*60);
+            $("#k_rand_691_1").val(Math.random()+"_"+(new Date()).getTime());
+            var action_="send_data.php";
+            var data = $("#form_zakaz_1").serialize();
+    //Проверка введенных данных
+            if($("#k_input_field_691_22021_1").val()==$("#k_input_field_691_22021_1").attr("data-alt"))
+            {
+              $("#k_input_field_691_22021_1").focus();
+              alert("Введите Ф.И.О.");
+              return;
+            }
+    
+            if($("#k_input_field_691_22031_1").val()==$("#k_input_field_691_22031_1").attr("data-alt"))
+            {
+              $("#k_input_field_691_22031_1").focus();
+              alert("Введите номер телефона");
+              return;
+            }
+
+            if($("#k_input_field_691_22051_1").val()==$("#k_input_field_691_22051_1").attr("data-alt"))
+            {
+              $("#k_input_field_691_22051_1").focus();
+              alert("Введите адрес");
+              return;
+            }
+
+            
+            
+    //ga('send', 'event', 'form', 'click button submit');
+            $('#form_query').hide();
+            $( "#progressbar" ).show();
+            $( "#dialog-modal" ).dialog( {
+            	height: 400,
+            	width : 600,
+            	modal: true,
+            	title: 'Оформить заказ',
+            	draggable: false,
+              	resizable: false
+            });
+//   
+            $('#form_query').hide();
+            $( "#progressbar" ).show();
+    //alert(data);
+            $.post(action_, data, function(get_data) {
+            	eval(get_data);
+        			//window.top.Step2FromForm();
+              	$('#form_query').attr('src', 'step2.php');
+            });
+            return false;
+		});
+    });
+    
+</script> 
+  <script>
+	$(document).ready(function() 
+	{
+        $(".submit-form-2").click(function() {
+            $("#ts_2").val(new Date().getTime());
+            var page_charset=window.document.charset;
+            if (!page_charset) page_charset=window.document.characterSet;
+            var ddd = new Date();
+            $("#time_user_2").val(Math.round(ddd.getTime()/1000.0)-ddd.getTimezoneOffset()*60);
+            $("#k_rand_691_2").val(Math.random()+"_"+(new Date()).getTime());
+            var action_="send_data.php?page_charset="+page_charset+"&ts"+new Date().getTime();
+            var data = $("#form_zakaz_2").serialize();
+    //Проверка введенных данных
+            if($("#k_input_field_691_22021_2").val()==$("#k_input_field_691_22021_2").attr("data-alt"))
+            {
+              $("#k_input_field_691_22021_2").focus();
+              alert("Введите Ф.И.О.");
+              return;
+            }
+    
+            if($("#k_input_field_691_22031_2").val()==$("#k_input_field_691_22031_2").attr("data-alt"))
+            {
+              $("#k_input_field_691_22031_2").focus();
+              alert("Введите номер телефона");
+              return;
+            }
+
+            if($("#k_input_field_691_22051_2").val()==$("#k_input_field_691_22051_2").attr("data-alt"))
+            {
+              $("#k_input_field_691_22051_2").focus();
+              alert("Введите адрес");
+              return;
+            }
+    //ga('send', 'event', 'form', 'click button submit');
+            $('#form_query').hide();
+            $( "#progressbar" ).show();
+            $( "#dialog-modal" ).dialog( {
+            	height: 400,
+            	width : 600,
+            	modal: true,
+            	title: 'Оформить заказ',
+            	draggable: false,
+              	resizable: false
+            });
+//   
+            $('#form_query').hide();
+            $( "#progressbar" ).show();
+    //alert(data);
+            $.post(action_, data, function(get_data) {
+            	eval(get_data);
+        			//window.top.Step2FromForm();
+              	$('#form_query').attr('src', 'step2.php');
+            });
+            return false;
+		});
+    });
+    
+</script>
+<script>
+	$(document).ready(function() 
+	{
+		$(".submit-button").click(function() {
+		
+		if( $('.form-modal [name=name]').val() == '') {
+			$(".form-modal [name=name]").focus();
+              alert("Введите имя");
+              return;
+        }
+		if( $('.form-modal [name=phone]').val() == '') {
+			$(".form-modal [name=phone]").focus();
+              alert("Введите Телефон");
+              return;
+        }
+		var action_="send_data.php";
+        var data = $("#form_call").serialize();
+		$.post(action_, data, function(get_data) {
+            	eval(get_data);
+              	//$('#form_query').attr('src', 'step2.php');
+         });
+			
+		console.log('заполнено');
+		$('.fancybox-close').click();
+		$('.thanksFog').show();
+	
+		
+
+		return false;
+		});
+	});
+</script> 
+  <!--<a href="http://nova-opt.ru/?ref=35" class="button1111" target="_blank" style="
+    position: fixed; 
+    top: 50%; 
+    right: -70px;
+	z-index: 101;
+">Оптовый сайт</a>-->
+  <div class="full--carbon"> 
+   <div class="wrap"> 
+    <div class="top-site"> 
+     <div class="logo-bl"> 
+      <a class="top-logo" href="index.html"><img alt="" src="img/logo.png" /></a> 
+      <h3 class="title">ограниченный выпуск</h3> 
+     </div> 
+     <img class="top-watch" alt="" src="img/top-watch.png" /> 
+     <div class="phone-bl"> 
+      <p class="number"><img src="img/iron_watch_a.png" style="margin-top: 3px;" /></p> 
+      <p class="title">Звонок бесплатный</p> 
+      <a class="button-zakaz-zvonok fancy-button" href="#wrap-modal-form">Заказать звонок</a> 
+     </div> 
+    </div>
+    <!-- /top-site --> 
+    <div class="share-bl"> 
+     <div class="left"> 
+      <div class="share-slider"> 
+       <div class="slide"> 
+        <img alt="" src="img/share-slide-1.jpg" /> 
+        <div class="text-bl"> 
+         <p class="yellow"> старт продаж!</p> 
+         <p>первым покупателям скидка!</p> 
+        </div> 
+       </div> 
+       <div class="slide"> 
+        <img alt="" src="img/share-slide-2.jpg" /> 
+        <div class="text-bl"> 
+         <p class="yellow">старт продаж!</p> 
+         <p>первым покупателям скидка!</p> 
+        </div> 
+       </div> 
+       <div class="slide"> 
+        <img alt="" src="img/share-slide-3.jpg" /> 
+        <div class="text-bl"> 
+         <p class="yellow">старт продаж!</p> 
+         <p>первым покупателям скидка!</p> 
+        </div> 
+       </div> 
+      </div>
+      <!-- /share-slider --> 
+      <div class="action-bl"> 
+       <div class="top"> 
+        <p class="old price">старая цена <span>2280 руб.</span></p> 
+        <p class="new price">новая цена: 890 руб.</p> 
+       </div> 
+       <div class="countdown-bl"> 
+        <p class="count-title">до конца акции осталось:</p> 
+        <div class="countdown" style="margin: 22px auto 0;display: inline-block;padding-left: 20px;"> 
+         <div class="counter"> 
+          <p class="hours"></p> 
+          <p class="minutes"></p> 
+          <p class="seconds"></p> 
+          <div> 
+           <p>ЧАСЫ</p>
+           <p>МИНУТЫ</p>
+           <p>СЕКУНДЫ</p> 
+          </div> 
+         </div> 
+        </div> 
+        <div class="gift"></div> 
+        <div class="countdown__arrow">
+         Закажите свои часы IRON SAMURAI
+        </div> 
+       </div>
+       <!-- /countdown-bl --> 
+      </div>
+      <!-- /action-bl --> 
+     </div>
+     <!-- /left --> 
+     <div class="right"> 
+      <div class="top-list-bl"> 
+       <p class="title">эти часы вдохновляют</p> 
+       <ul> 
+        <li><span>Уникальность:</span> революционный дизайн — часы смотрятся великолепно</li> 
+        <li><span>Прочность:</span> особый износостойкий материал и защита от влаги</li> 
+        <li><span>Unisex:</span> часы подойдут и парням и девушкам</li> 
+        <li><span>Надежность:</span> браслет и застежка повышенной прочности</li> 
+        <li><span>Практичность: </span> LED подсветка экономит заряд батареи</li> 
+        <li><span>Качество:</span> гарантия от — 1 год</li> 
+       </ul> 
+      </div>
+      <!-- /list-bl --> 
+      <div class="top-form-bl"> 
+       <form action="" method="post" id="form_zakaz_1" class="top-form"> 
+        <input name="k_rand_691" id="k_rand_691_1" type="hidden" /> 
+        <input name="goods" id="goods" value="64" type="hidden" /> 
+        <input name="location" id="location_1" value="saitru.ru" type="hidden" /> 
+        <input name="time_user" id="time_user_1" type="hidden" /> 
+        <input name="ts" id="ts_1" type="hidden" />
+		<input type="text" class="hidden" value="Заказ 1 с watch" name="article" />
+        <input id="k_input_field_691_24281_1" name="k_input_field_691_24281" value="" type="hidden" /> 
+        <input id="amount_1" name="amount" value="1" type="hidden" /> 
+        <div class="row"> 
+         <input class="fio" data-alt="" name="name" id="k_input_field_691_22021_1" type="text" placeholder="Введите ФИО" required="" onfocus="placeholder='';" onblur="placeholder='Введите ФИО';" /> 
+        </div> 
+        <div class="row"> 
+         <input type="text" data-alt="" id="k_input_field_691_22031_1" name="phone" placeholder="Введите телефон" required="" onfocus="placeholder='';" onblur="placeholder='Введите телефон';" /> 
+        </div> 
+        <div class="row"> 
+         <input type="text" data-alt="" id="k_input_field_691_22051_1" name="address" placeholder="Введите адрес" onfocus="placeholder='';" onblur="placeholder='Введите телефон';" /> 
+        </div> 
+        <div class="button-row"> 
+         <span class="button-yellow-zakazat-1 submit-form-1">заказать</span> 
+        </div> 
+       </form> 
+      </div> 
+     </div>
+     <!-- /right --> 
+    </div>
+    <!-- /share-bl --> 
+   </div>
+   <!-- /wrap --> 
+  </div>
+  <!-- /carbon --> 
+  <div class="full--blue"> 
+   <div class="wrap"> 
+    <div class="left slider-thumb-wrap"> 
+     <div class="thumb-slider sliderkit"> 
+      <div class="sliderkit-nav"> 
+       <div class="sliderkit-nav-clip"> 
+        <ul> 
+         <li><a href="#" rel="nofollow"><img alt="" src="img/c1m.jpg" /></a></li> 
+         <li><a href="#" rel="nofollow"><img alt="" src="img/c2m.jpg" /></a></li> 
+         <li><a href="#" rel="nofollow"><img alt="" src="img/c3m.jpg" /></a></li> 
+         <li><a href="#" rel="nofollow"><img alt="" src="img/c4m.jpg" /></a></li> 
+         <li><a href="#" rel="nofollow"><img alt="" src="img/c5m.jpg" /></a></li> 
+         <li><a href="#" rel="nofollow"><img alt="" src="img/c6m.jpg" /></a></li> 
+         <li><a href="#" rel="nofollow"><img alt="" src="img/c7m.jpg" /></a></li> 
+         <li><a href="#" rel="nofollow"><img alt="" src="img/c8m.jpg" /></a></li> 
+        </ul> 
+       </div> 
+       <div class="sliderkit-nav-btn sliderkit-nav-prev">
+        <a rel="nofollow" href="#" title="Previous line"><span>Previous</span></a>
+       </div> 
+       <div class="sliderkit-nav-btn sliderkit-nav-next">
+        <a rel="nofollow" href="#" title="Next line"><span>Next</span></a>
+       </div> 
+      </div> 
+      <div class="sliderkit-panels"> 
+       <div class="sliderkit-panel"> 
+        <a href="img/c1.jpg" class="jqzoom"> <img alt="" src="img/c1.jpg" /> </a> 
+       </div> 
+       <div class="sliderkit-panel"> 
+        <a href="img/c2.jpg" class="jqzoom"> <img alt="" src="img/c2.jpg" /> </a> 
+       </div> 
+       <div class="sliderkit-panel"> 
+        <a href="img/c3.jpg" class="jqzoom"> <img alt="" src="img/c3.jpg" /> </a> 
+       </div> 
+       <div class="sliderkit-panel"> 
+        <a href="img/c4.jpg" class="jqzoom"> <img alt="" src="img/c4.jpg" /> </a> 
+       </div> 
+       <div class="sliderkit-panel"> 
+        <a href="img/c5.jpg" class="jqzoom"> <img alt="" src="img/c5.jpg" /> </a> 
+       </div> 
+       <div class="sliderkit-panel"> 
+        <a href="img/c6.jpg" class="jqzoom"> <img alt="" src="img/c6.jpg" /> </a> 
+       </div> 
+       <div class="sliderkit-panel"> 
+        <a href="img/c7.jpg" class="jqzoom"> <img alt="" src="img/c7.jpg" /> </a> 
+       </div> 
+       <div class="sliderkit-panel"> 
+        <a href="img/c8.jpg" class="jqzoom"> <img alt="" src="img/c8.jpg" /> </a> 
+       </div> 
+      </div> 
+     </div>
+     <!-- /slider-ejik --> 
+    </div>
+    <!-- /left --> 
+    <div class="right"> 
+     <div class="description-bl"> 
+      <div class="tabs"> 
+       <div class="tab current">
+         Iron samurai 
+       </div> 
+       <div class="tab">
+         характеристики 
+       </div> 
+       <div class="tab">
+         доставка 
+       </div> 
+      </div>
+      <!-- /nav-tabs --> 
+      <div class="tabs-box"> 
+       <div class="box"> 
+        <p><span class="color">Iron Samurai</span> — это современные часы с уникальным дизайном в стиле unisex. Разработанные при участии японских дизайнеров, они моментально завладели вниманием западных критиков и обладателей хорошего вкуса. Эта модель быстро стала лидером продаж в США и Европе, а недавно была признана одной из самых продаваемых и в России.</p> 
+        <p>Одной из приоритетных задач, стоящих перед создателями <br /><span class="color">Iron Samurai</span> было сконструировать часы для мужчин и женщин, которых привлекает новизна и оригинальность. Не случайно источником вдохновения при разработке передового дизайна данной модели стала эпоха самураев, которая является символом смелости и новаторства.</p> 
+        <p>В последнее время большинство людей перестало воспринимать часы, как обязательный и дорогой фетиш. Покупатели отказываются от дорогих швейцарских хронометров в пользу современных и удобных моделей по разумной цене. Создатели <br /><span class="color">Iron Samurai</span> учли эту тенденцию, поэтому их часы можно смело назвать отличным сочетанием цены и качества. Оригинальный дизайн и надежная электроника — вот причина, по которой эти часы миллионами продаются по всему миру.</p> 
+       </div> 
+       <div class="box"> 
+        <p><span class="color">Корпус:</span></p> 
+        <ul> 
+         <li>• Материал — высокоуглеродистый стальной сплав</li> 
+         <li>• Цвет — светлый или темный</li> 
+         <li>• Защита от влаги</li> 
+         <li>• Износостойкость</li> 
+         <li>• Ударопрочность</li> 
+        </ul> 
+        <p><span class="color">Дисплей:</span></p> 
+        <ul> 
+         <li>• Принцип отображения времени — LED подсветка</li> 
+         <li>• Цвет подсветки — красный или синий</li> 
+         <li>• Количество кнопок — 4 шт.</li> 
+        </ul> 
+        <p><span class="color">Браслет:</span></p> 
+        <ul> 
+         <li>• Материал — высокоуглеродистый стальной сплав</li> 
+         <li>• Цвет — светлый или темный (идентичный цвету корпуса)</li> 
+         <li>• Длина — 16 сегментов общей длиной 180 см</li> 
+         <li>• Застежка — замок повышенной надежности</li> 
+        </ul> 
+       </div> 
+       <div class="box"> 
+        <p><span class="color">Быстрая и бережная доставка по России.</span></p>
+        <br /> 
+        <ul> 
+         <li>• формирование заказа в течение 1 дня</li> 
+         <li>• работа с закрытым филиалом &laquo;Почты России&raquo;</li> 
+         <li>• доставка курьером до двери по Москве и Санкт-Петербургу</li> 
+         <li>• доставка по России (срок: 1-14 дней)</li> 
+         <li>• доставка при полной предоплате товара - бесплатно<span class="color">*</span></li> 
+        </ul> 
+        <p><span class="color">*</span><span class="text">Предоплату можно произвести с помощью платежных систем: Яндекс.Деньги и Webmoney, а также квитанцией в Сбербанке или переводом на карту Сбербанка.</span></p> 
+       </div> 
+      </div>
+      <!-- /tabs-box --> 
+      <a class="button-yellow-zakazat-2" href="#anchor__red-order-bl">заказать</a> 
+     </div>
+     <!-- /description-bl --> 
+    </div>
+    <!-- /right --> 
+   </div>
+   <!-- /wrap --> 
+  </div>
+  <!-- /blue --> 
+  <div class="full--carbon"> 
+   <div class="wrap"> 
+    <div class="products"> 
+     <div class="product item-1"> 
+      <img alt="" src="img/product-1.png" class="product-1" /> 
+      <p class="title">уникальный дизайн</p> 
+      <p class="text">Объединяет в себе Hi-Tech стиль и загадочность востока. Время отображается LED-подсветкой, элементы которой расположены между сегментами браслета.</p> 
+     </div> 
+     <div class="product item-2"> 
+      <img alt="" src="img/product-2.png" class="product-2" /> 
+      <p class="title">надежный замок</p> 
+      <p class="text">Из всех вариаций замков для часов данная модификация является наиболее надежной и прочной. Часы выдержат самый активный образ жизни владельца.</p> 
+     </div> 
+     <div class="product item-3"> 
+      <img alt="" src="img/product-3.png" class="product-3" /> 
+      <p class="title">стильный браслет</p> 
+      <p class="text">Браслет из особого сплава устойчив к царапинам. 16 сегментов и циферблат образуют прочную цепь, которая отлично смотрится на руке и легко регулируется по длине.</p> 
+     </div> 
+    </div> 
+   </div>
+   <!-- /wrap --> 
+  </div>
+  <!-- /carbon --> 
+  <div class="full--blue"> 
+   <div class="wrap"> 
+    <div class="about"> 
+     <div class="left"> 
+      <p class="title">Особый эффект Iron Samurai </p> 
+      <p class="text"><span class="color">Часы Iron Samurai</span> — это простой способ доставить себе удовольствие от удачной покупки. Отдельно стоит упомянуть об уникальной особенности этой модели: она повышает самооценку владельца.</p> 
+      <br /> 
+      <p>И это не фантастика, ведь если человек в восторге от своих часов (ботинок, костюма и т. д.), то это сразу же проявляется внешне: расправляются плечи, появляется стопроцентная уверенность в себе. Это незамедлительно сказывается на общении, в частности с противоположным полом.</p> 
+     </div> 
+     <div class="right"> 
+      <img alt="" class="about-img" src="img/about.jpg" /> 
+     </div> 
+    </div> 
+   </div>
+   <!-- /wrap --> 
+  </div>
+  <!-- /carbon --> 
+  <div class="full--red red-phone-bl"> 
+   <div class="wrap"> 
+    <div class="big-phone-bl"> 
+     <div class="left"> 
+      <img alt="" src="img/phone.png" class="image" /> 
+      <div class="text-bl"> 
+       <p>закажите по телефону</p> 
+       <p><img src="img/iron_watch_a_2.png" /></p> 
+      </div> 
+     </div> 
+     <div class="right"> 
+      <div class="text-bl"> 
+       <p>звонок по россии </p> 
+       <p>бесплатный!</p> 
+      </div> 
+      <img alt="" src="img/map.png" class="image" /> 
+     </div> 
+    </div> 
+   </div>
+   <!-- /wrap --> 
+  </div>
+  <!-- /carbon --> 
+  <div class="full--carbon"> 
+   <div class="wrap"> 
+    <div class="circles circles--carbon"> 
+     <div class="rib-line-title__carbon"> 
+      <p>почему нам доверяют?</p> 
+     </div> 
+     <div class="circles-list"> 
+      <div class="circle"> 
+       <img alt="" src="img/carbon-circle-1.png" /> 
+       <p class="title">100% гарантия <br /> возрата денег</p> 
+       <p class="text">Если товар не устроит Вас, <br /> мы вернем Вам деньги</p> 
+      </div> 
+      <div class="circle"> 
+       <img alt="" src="img/carbon-circle-2.png" /> 
+       <p class="title">Более 7800 <br /> клиентов</p> 
+       <p class="text">Количество лояльных <br /> клиентов ежедневно <br /> увеличивается</p> 
+      </div> 
+      <div class="circle"> 
+       <img alt="" src="img/carbon-circle-3.png" /> 
+       <p class="title">самые выгодные <br /> цены</p> 
+       <p class="text">Работаем напрямую <br /> с производителями и проводим <br /> акции</p> 
+      </div> 
+      <div class="circle"> 
+       <img alt="" src="img/carbon-circle-4.png" /> 
+       <p class="title">Оригинальные часы <br /> Iron Samurai</p> 
+       <p class="text">Продаем только оригинальные <br /> часы с гарантией <br /> и сертификатами</p> 
+      </div> 
+     </div> 
+    </div>
+    <!-- /circles --> 
+   </div>
+   <!-- /wrap --> 
+  </div>
+  <!-- /carbon --> 
+  <div class="full--red"> 
+   <div class="wrap"> 
+    <div class="circles circles--red"> 
+     <div class="rib-line-title__red"> 
+      <p>как мы работаем</p> 
+     </div> 
+     <div class="circles-list"> 
+      <div class="circle"> 
+       <img alt="" src="img/red-circle-1.png" /> 
+       <p class="title">вы оставляете заявку <br /> на сайте или по телефону </p> 
+      </div> 
+      <div class="circle"> 
+       <img alt="" src="img/red-circle-2.png" /> 
+       <p class="title">менеджер связывается с вами в течение 15 минут<br />для подтверждения заказа </p> 
+      </div> 
+      <div class="circle"> 
+       <img alt="" src="img/red-circle-3.png" /> 
+       <p class="title">мы доставляем вашу <br /> посылку по указанному адресу <br /> за 1-14 дней</p> 
+      </div> 
+      <div class="circle"> 
+       <img alt="" src="img/red-circle-4.png" /> 
+       <p class="title">вы получаете свой товар и платите<br /> за него на почте или курьеру</p> 
+      </div> 
+     </div> 
+    </div>
+    <!-- /circles --> 
+   </div>
+   <!-- /wrap --> 
+  </div>
+  <!-- /carbon --> 
+  <div class="full--carbon"> 
+   <div class="wrap"> 
+    <div class="map-bl"> 
+     <div class="rib-line-title__carbon"> 
+      <p>доставка по россии за 1-14 дней</p> 
+     </div> 
+     <img alt="" src="img/russia-map.png" /> 
+    </div> 
+   </div>
+   <!-- /wrap --> 
+  </div>
+  <!-- /carbon --> 
+  <div class="full--red" id="anchor__red-order-bl"> 
+   <div class="wrap"> 
+    <div class="make-order-bl"> 
+     <div class="rib-line-title__red"> 
+      <p>Оформление заказа</p> 
+     </div> 
+     <div class="envelope"> 
+      <div class="left"> 
+       <div class="action-bl"> 
+        <div class="countdown-bl"> 
+         <p class="count-title">до конца акции осталось:</p> 
+         <div class="countdown"> 
+          <div class="counter"> 
+           <p class="hours"></p> 
+           <p class="minutes"></p> 
+           <p class="seconds"></p> 
+           <div> 
+            <p>ЧАСЫ</p>
+            <p>МИНУТЫ</p>
+            <p>СЕКУНДЫ</p> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="gift"></div> 
+        </div>
+        <!-- /countdown-bl --> 
+        <div class="price-bl"> 
+         <p class="old">старая цена <span>2280 руб.</span></p> 
+         <p class="new">новая цена : 890 руб.</p> 
+        </div> 
+       </div>
+       <!-- /action-bl --> 
+      </div> 
+      <div class="right"> 
+       <form action="" method="post" id="form_zakaz_2" class="envelope-form"> 
+        <input name="k_rand_691" id="k_rand_691_2" type="hidden" /> 
+        <input name="goods" id="goods" value="64" type="hidden" /> 
+        <input name="location" id="location_2" value="saitru.ru" type="hidden" /> 
+        <input name="time_user" id="time_user_2" type="hidden" /> 
+        <input name="ts" id="ts" type="hidden" />
+		<input type="text" class="hidden" value="Заказ 2 с watch" name="article" /> 
+        <input id="k_input_field_691_24281_2" name="k_input_field_691_24281" value="" type="hidden" /> 
+        <input id="amount_2" name="amount" value="1" type="hidden" /> 
+        <div class="row"> 
+         <input class="fio" data-alt="" name="name" id="k_input_field_691_22021_2" type="text" placeholder="Введите ФИО" required="" onfocus="placeholder='';" onblur="placeholder='Введите ФИО';" /> 
+        </div> 
+        <div class="row"> 
+         <input type="text" data-alt="" id="k_input_field_691_22031_2" name="phone" placeholder="Введите телефон" required="" onfocus="placeholder='';" onblur="placeholder='Введите телефон';" /> 
+        </div> 
+        <div class="row"> 
+         <input type="text" data-alt="" id="k_input_field_691_22051_2" name="address" placeholder="Введите адрес" onfocus="placeholder='';" onblur="placeholder='Введите телефон';" /> 
+        </div> 
+        <div class="button-row"> 
+         <span class="button-red-zakaz submit-form-2">заказать</span> 
+        </div> 
+       </form> 
+      </div> 
+     </div> 
+    </div>
+    <!-- /make-order-bl --> 
+   </div>
+   <!-- /wrap --> 
+  </div>
+  <!-- /carbon --> 
+  <div class="full--carbon"> 
+   <div class="wrap"> 
+    <div class="review-bl"> 
+     <div class="rib-line-title__carbon"> 
+      <p>отзывы наших клиентов</p> 
+     </div> 
+     <div class="review-slider"> 
+      <div class="slide"> 
+       <div class="review-item-wrap"> 
+        <div class="review-item"> 
+         <div class="img-bl"> 
+          <img alt="" src="img/review-author-1.jpg" /> 
+         </div> 
+         <div class="text-bl"> 
+          <p class="title">Александр Грачев</p> 
+          <p class="text">Отличные часы. Купил с полгода как — ни одного нарекания. Все работает, подсветка яркая. Пару раз ронял — выдержали. Рекомендую!</p> 
+          <div class="photos"> 
+           <div class="photo"> 
+            <a href="img/photo1_big.jpg" class="fancy-rev-photo" rel="gallery1"> <img alt="" src="img/photo1_small.jpg" /> </a> 
+           </div> 
+           <div class="photo"> 
+            <a href="img/photo2_big.jpg" class="fancy-rev-photo" rel="gallery1"> <img alt="" src="img/photo2_small.jpg" /> </a> 
+           </div> 
+          </div> 
+         </div> 
+        </div> 
+       </div>
+       <!-- /review-item-wrap --> 
+       <div class="review-item-wrap"> 
+        <div class="review-item"> 
+         <div class="img-bl"> 
+          <img alt="" src="img/review-author-2.jpg" /> 
+         </div> 
+         <div class="text-bl"> 
+          <p class="title">Виталик Гринько</p> 
+          <p class="text">Друг подарил, говорит у вас покупал. Хочу спасибо сказать за отличные часы. Для велосипеда самое то.</p> 
+          <div class="photos"> 
+           <div class="photo"> 
+            <a href="img/photo9_big.jpg" class="fancy-rev-photo" rel="gallery2"> <img alt="" src="img/photo9_small.jpg" /> </a> 
+           </div> 
+          </div> 
+         </div> 
+        </div> 
+       </div>
+       <!-- /review-item-wrap --> 
+       <div class="review-item-wrap"> 
+        <div class="review-item"> 
+         <div class="img-bl"> 
+          <img alt="" src="img/review-author-3.jpg" /> 
+         </div> 
+         <div class="text-bl"> 
+          <p class="title">Ирина Васильева</p> 
+          <p class="text">Покупала сначала молодому человеку в подарок, а потом и себе заказала. Правда, светленькие. Теперь ходим с одинаковыми часами, очень органично выглядит.</p> 
+          <div class="photos"> 
+           <div class="photo"> 
+            <a href="img/photo3_big.jpg" class="fancy-rev-photo" rel="gallery3"> <img alt="" src="img/photo3_small.jpg" /> </a> 
+           </div> 
+           <div class="photo"> 
+            <a href="img/photo4_big.jpg" class="fancy-rev-photo" rel="gallery3"> <img alt="" src="img/photo4_small.jpg" /> </a> 
+           </div> 
+          </div> 
+         </div> 
+        </div> 
+       </div>
+       <!-- /review-item-wrap --> 
+      </div>
+      <!-- /slide --> 
+      <div class="slide"> 
+       <div class="review-item-wrap"> 
+        <div class="review-item"> 
+         <div class="img-bl"> 
+          <img alt="" src="img/review-author-4.jpg" /> 
+         </div> 
+         <div class="text-bl"> 
+          <p class="title">Олег Мурза</p> 
+          <p class="text">Спасибо оператору Вере за то, что объяснила, как подгонять по размеру браслет. Теперь сидят как влитые!</p> 
+          <div class="photos"> 
+           <div class="photo"> 
+            <a href="img/photo14_big.jpg" class="fancy-rev-photo" rel="gallery4"> <img alt="" src="img/photo14_small.jpg" /> </a> 
+           </div> 
+           <div class="photo"> 
+            <a href="img/photo15_big.jpg" class="fancy-rev-photo" rel="gallery4"> <img alt="" src="img/photo15_small.jpg" /> </a> 
+           </div> 
+          </div> 
+         </div> 
+        </div> 
+       </div>
+       <!-- /review-item-wrap --> 
+       <div class="review-item-wrap"> 
+        <div class="review-item"> 
+         <div class="img-bl"> 
+          <img alt="" src="img/review-author-5.jpg" /> 
+         </div> 
+         <div class="text-bl"> 
+          <p class="title">Алена Альпова</p> 
+          <p class="text">Купила мужу в подарок. Он занимается рафтингом, так что часы меняем часто=). Самурай пока держится, уже 3 сплава пережил. Посмотрим, что будет дальше.</p> 
+         </div> 
+        </div> 
+       </div>
+       <!-- /review-item-wrap --> 
+       <div class="review-item-wrap"> 
+        <div class="review-item"> 
+         <div class="img-bl"> 
+          <img alt="" src="img/review-author-6.jpg" /> 
+         </div> 
+         <div class="text-bl"> 
+          <p class="title">Руслан Мамедов</p> 
+          <p class="text">Купил оба вида (светлые и темные). И те и те часы классные, но те, которые с красной подсветкой немного лучше — в солнечные дни время лучше видно. Рекомендую всем!</p> 
+          <div class="photos"> 
+           <div class="photo"> 
+            <a href="img/photo10_big.jpg" class="fancy-rev-photo" rel="gallery6"> <img alt="" src="img/photo10_small.jpg" /> </a> 
+           </div> 
+           <div class="photo"> 
+            <a href="img/photo11_big.jpg" class="fancy-rev-photo" rel="gallery6"> <img alt="" src="img/photo11_small.jpg" /> </a> 
+           </div> 
+          </div> 
+         </div> 
+        </div> 
+       </div>
+       <!-- /review-item-wrap --> 
+      </div>
+      <!-- /slide --> 
+      <div class="slide"> 
+       <div class="review-item-wrap"> 
+        <div class="review-item"> 
+         <div class="img-bl"> 
+          <img alt="" src="img/review-author-7.jpg" /> 
+         </div> 
+         <div class="text-bl"> 
+          <p class="title">Ира Карамазова</p> 
+          <p class="text">Хорошие часы. Время точно показывают, отлично смотрятся. Только зимой в них иногда неудобно — металл все-таки. А в остальном — шикарный подарок или покупка.</p> 
+          <div class="photos"> 
+           <div class="photo"> 
+            <a href="img/photo5_big.jpg" class="fancy-rev-photo" rel="gallery7"> <img alt="" src="img/photo5_small.jpg" /> </a> 
+           </div> 
+           <div class="photo"> 
+            <a href="img/photo6_big.jpg" class="fancy-rev-photo" rel="gallery7"> <img alt="" src="img/photo6_small.jpg" /> </a> 
+           </div> 
+          </div> 
+         </div> 
+        </div> 
+       </div>
+       <!-- /review-item-wrap --> 
+       <div class="review-item-wrap"> 
+        <div class="review-item"> 
+         <div class="img-bl"> 
+          <img alt="" src="img/review-author-8.jpg" /> 
+         </div> 
+         <div class="text-bl"> 
+          <p class="title">Алик Шахтаров</p> 
+          <p class="text">Мое первое впечатление было отрицательным. Не знаю как Почта России их везла, но ее &laquo;профессионалы&raquo; умудрились даже стальной браслет погнуть. Еще внутри корпуса что-то звякало, если потрясти. Но позвонил продавцу и прислали замену. Заменили бесплатно и довольно оперативно. В общем, пользуюсь полгода почти, сбоя еще не было. Спасибо!</p> 
+          <div class="photos"> 
+           <div class="photo"> 
+            <a href="img/photo17_big.jpg" class="fancy-rev-photo" rel="gallery8"> <img alt="" src="img/photo17_small.jpg" /> </a> 
+           </div> 
+          </div> 
+         </div> 
+        </div> 
+       </div>
+       <!-- /review-item-wrap --> 
+       <div class="review-item-wrap"> 
+        <div class="review-item"> 
+         <div class="img-bl"> 
+          <img alt="" src="img/review-author-9.jpg" /> 
+         </div> 
+         <div class="text-bl"> 
+          <p class="title">Кирилл Орленко</p> 
+          <p class="text">Замечательные часы! С моим милитари стилем лучше не подберешь. И брутально и модно сразу. Покупайте, не пожалеете!</p> 
+          <div class="photos"> 
+           <div class="photo"> 
+            <a href="img/photo12_big.jpg" class="fancy-rev-photo" rel="gallery9"> <img alt="" src="img/photo12_small.jpg" /> </a> 
+           </div> 
+           <div class="photo"> 
+            <a href="img/photo13_big.jpg" class="fancy-rev-photo" rel="gallery9"> <img alt="" src="img/photo13_small.jpg" /> </a> 
+           </div> 
+          </div> 
+         </div> 
+        </div> 
+       </div>
+       <!-- /review-item-wrap --> 
+      </div>
+      <!-- /slide --> 
+     </div>
+     <!-- /review-slider--> 
+     <a class="button-grey-review" href="mailto:mail@mail.ru">написать отзыв</a> 
+    </div>
+    <!-- /review-bl --> 
+   </div>
+   <!-- /wrap --> 
+  </div>
+  <!-- /carbon --> 
+  <div class="big-map"> 
+   <div id="map-canvas"></div> 
+  </div> 
+  <div class="full--yellow"> 
+   <div class="red-line"></div> 
+   <div class="wrap"> 
+    <div class="last-order-bl"> 
+     <div class="watch-bl"> 
+      <img alt="" src="img/watch.png" /> 
+      <div class="text-bl"> 
+       <p class="title">поторопитесь!</p> 
+       <p class="text">Выгодное предложение <br /> скоро потеряет силу! </p> 
+      </div> 
+     </div> 
+     <div class="countdown-bl"> 
+      <p class="count-title">до конца акции осталось:</p> 
+      <div class="countdown"> 
+       <div class="counter"> 
+        <p class="hours"></p> 
+        <p class="minutes"></p> 
+        <p class="seconds"></p> 
+        <div> 
+         <p>ЧАСЫ</p>
+         <p>МИНУТЫ</p>
+         <p>СЕКУНДЫ</p> 
+        </div> 
+       </div> 
+      </div> 
+     </div>
+     <!-- /countdown-bl --> 
+     <a class="button-red-zakaz-1 fancy-button" href="#wrap-modal-form">заказать</a> 
+    </div>
+    <!-- /last-order-bl --> 
+   </div>
+   <!-- /wrap --> 
+  </div>
+  <!-- /carbon --> 
+  <footer class="bottom-site"> 
+   <div class="footer__top"> 
+    <div class="wrap"> 
+     <div class="payment"> 
+      <p class="title">способы оплаты</p> 
+      <div class="image">
+       <img alt="" src="img/payment.png" />
+      </div> 
+     </div> 
+     <div class="delivery"> 
+      <p class="title">способы доставки:</p> 
+      <div class="image">
+       <img alt="" src="img/delivery.png" />
+      </div> 
+     </div> 
+     <div class="partners"> 
+      <p class="title">партнеры:</p> 
+      <div class="image">
+       <img alt="" src="img/partners.png" />
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="footer__bottom"> 
+    <div class="wrap"> 
+     <div class="text-bl"> 
+      <p>&copy; 2012-2014 ООО &quot;ДИДЖИТАЛ ФРЕЙМ&quot;</p> 
+      <p>Все права защищены.</p> 
+      <p>ИНН 1832115421</p> 
+      <p>ОГРН 1141832000650</p> 
+     </div> 
+     <div class="text-bl"> 
+      <p>телефон: <img src="img/phone9.png" /></p> 
+      <p>Email: <span class="color">mail@mail.ru</span></p> 
+     </div> 
+     <div class="text-bl"> 
+      <p><a href="http://iron-watch.ru/a/confidentiality.doc">Политика конфиденциальности</a></p> 
+     </div> 
+    </div> 
+   </div> 
+  </footer> 
+  
+  <div class="hidden wrap-modal" id="wrap-modal-form"> 
+   <div class="modal__top">заказать обратный звонок</div> 
+   <div class="main"> 
+    <form class="form-modal" id="form_call"> 
+     <div class="row"> 
+      <input type="text" placeholder="Ваше имя" required="" name="name" onfocus="placeholder='';" onblur="placeholder='Ваше имя';" /> 
+     </div> 
+     <div class="row"> 
+      <input type="text" placeholder="Ваш номер телефона" required="" name="phone" onfocus="placeholder='';" onblur="placeholder='Ваш номер телефона';" /> 
+     </div> 
+     <div class="row"> 
+      <a class="submit-button" style="cursor:pointer;">ок</a> 
+     </div> 
+     <input type="submit" class="hidden original-submit" /> 
+     <input type="reset" class="hidden reset" /> 
+     <input type="text" class="hidden" value="Заказ звонка с watch" name="article" /> 
+    </form> 
+   </div> 
+  </div> 
+  
+  <a class="hidden fancy-button" id="link-wrap-modal--big" href="#wrap-modal--big">ok</a> 
+  
+  <div class="hidden wrap-modal wrap-modal--big" id="wrap-modal--big"> 
+   <div class="modal__top">оформить заказ</div> 
+   <div class="main"> 
+    <div class="delivery-modal"> 
+     <p class="title">укажите способ доставки:</p> 
+     <form> 
+      <div class="box"> 
+       <input class="active" type="text" readonly="" value="Россия, по предоплате - бесплатно!" /> 
+       <input type="text" readonly="" value="Россия, наложенный платеж - 250 руб." /> 
+       <input type="text" readonly="" value="Москва, курьер - 250 руб." /> 
+       <input type="text" readonly="" value="Санкт-Петербург, курьер - 250 руб." /> 
+       <input type="text" readonly="" value="Киров - курьер - 250 руб." /> 
+      </div> 
+      <a class="button-red-zakaz-4" href=""></a> 
+     </form> 
+    </div> 
+   </div> 
+  </div>
+  
+	<div class="thanksFog" style="display: none">
+            <div class="thanks-wrapper">
+                <div class="thanks-message">
+                    <div class="thanks-close" onclick="$('.thanksFog').hide();"></div>
+                    <div class="thanks-image"><img src="img/thanks-girl1.png" alt=""></div>
+                    <div class="thanks-1">Ваш заказ принят!</div>
+                    <div class="thanks-2">Ожидайте звонка<br> в течение 10 минут</div>
+                    <div class="thanks-3">Спасибо за заявку!</div>
+                    <div class="thanks-button-wrapper"><div class="thanks-button" onclick="$('.thanksFog').fadeOut(200);">Закрыть</div></div>
+                </div>
+            </div>
+	</div>
+		
+  <script>
+
+    $('.share-slider').slick({
+        slide: '.slide'
+    });
+
+    $('.review-slider').slick({
+        slide: '.slide',
+        dots: true
+    });
+
+
+    $(".thumb-slider").sliderkit({
+        circular:true,
+        shownavitems:3,
+        auto:false,
+        scroll: 1,
+        panelfxspeed: 300,
+        scrollspeed: 200
+
+    });
+
+
+</script> 
+  <script>
+
+    $('.jqzoom').jqzoom({
+        zoomType: 'standard',
+        lens:true,
+        title: false,
+        preloadImages: false,
+        alwaysOn:false,
+        zoomWidth: 515,
+        zoomHeight: 554,
+        position: 'right'
+
+    });
+
+</script> 
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuUSjIzqLCBX5nfc8S20VrefZfPPOJvbk&amp;sensor=false">
+</script> 
+  <div id="dialog-modal" title="Basic modal dialog" style="overflow : hidden; display: none;"> 
+   <div id="progressbar"></div> 
+   <iframe id="form_query" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" onload="$('#form_query').show();$('#progressbar').hide();" style="width : 100%; height : 100%"> </iframe> 
+  </div>   
+ </body>
+</html>
