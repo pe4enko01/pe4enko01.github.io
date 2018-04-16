@@ -27,6 +27,12 @@ window.addEventListener('DOMContentLoaded', function () {
     inputPage.oninput = function(){
         totalValue.innerHTML = inputPage.value * 2000 ;
     };
+    hour.oninput = function(){
+        totalValue.innerHTML = hour.value * cos.value ;
+    };
+    cos.oninput = function(){
+        totalValue.innerHTML = hour.value * cos.value ;
+    };
 
 
     checkbox_1.onclick = function(){
