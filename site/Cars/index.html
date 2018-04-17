@@ -489,7 +489,7 @@
 <div id="six-block">
     <div class="container">
         <div class="trid-word">
-            <div class="wo"> <span>ОТЗЫВЫ</span> </div>
+            <div class="wo"> <span>КУРСЫ</span> </div>
             <div class="lin"></div>
         </div>
 
@@ -704,33 +704,24 @@
 
     var main =  $("#main");
     var butUp = $(".fot-up");
-    var but = $(".fors-button");
+    var but = $("#form-button");
     var popup =$(".popup");
     var naeb = $(".naeb");
-    var menu = $(".menu-words");
 
-    but.eq(0).on('click',function () {
+    but.on('click',function () {
         popup.css("display","block");
     });
-    but.eq(1).on('click',function () {
-        popup.css("display","block");
-    });
+
     naeb.on('click',function () {
         popup.css("display","none");
     });
 
 
 
-    menu.eq(2).on('click',function () {
-        $("html, body").animate({scrollTop:2400},900);
+    main.on('click',function () {
+        $("html, body").animate({scrollTop:1000},900);
     });
 
-    menu.eq(3).on('click',function () {
-        $("html, body").animate({scrollTop:4900},900);
-    });
-    menu.eq(4).on('click',function () {
-        $("html, body").animate({scrollTop:6000},900);
-    });
     butUp.on('click',function () {
         $("html, body").animate({scrollTop:0},900);
     });

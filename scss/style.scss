@@ -137,6 +137,18 @@ body{
   height: 240px;
   margin-right: 20px
 }
+.fifs-sl-2{
+  display: flex;
+  padding: 0px 0px 0 0px;
+  background-image: url("../img/2018-04-17_17-39-23.png");
+  background-position: center ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 400px;
+  height: 240px;
+  margin-right: 20px
+}
+
 //СЛАЙДЕР
 
 .slick-prev { // стиль стрелок
@@ -495,23 +507,21 @@ body{
   justify-content: center;
   align-items: center;
   font-size: 20px;
+  color: $white;
+  text-decoration: none;
 }
 .right-fot:hover{
   background-color: $white;
-  color:$black;
+  color:$black ;
   cursor: pointer;
+  text-decoration: none ;
 }
-
-
-
-
-
-
-
-
-
-
-
+.contect-but{
+  text-decoration: none;
+}
+//.contect-but:hover{
+//  color:$black;
+//}
 
 
 // Экстрамалые девайсы («портретные телефоны», < 576px)
@@ -544,12 +554,53 @@ body{
 
 // Малые девайсы («ландшафтные», >= 575px)
 @media (min-width: 576px) and (max-width: 767.98px) {
+  .mac{
+    display: none;
 
+  }
+  .info{
+    display: block;
+
+  }
+  .pic_info{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+
+  }
+  .slick-prev{
+    display: none;
+  }
+  .slick-next{
+    display: none;
+  }
+
+  #third-block{
+    display: none;
+  }
 }
 
 // Средние девайсы («таблетки», >= 768px)
 @media (min-width: 768px) and (max-width: 991.98px) {
+  .mac{
+    display: none;
 
+  }
+  .pic_info{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+
+  }
+  .slick-prev{
+    display: none;
+  }
+  .slick-next{
+    display: none;
+  }
+  #third-block{
+    display: none;
+  }
 }
 
 // Большие девайсы (большие десктопы, >= 992px)

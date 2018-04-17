@@ -111,6 +111,17 @@ body {
   height: 240px;
   margin-right: 20px; }
 
+.fifs-sl-2 {
+  display: flex;
+  padding: 0px 0px 0 0px;
+  background-image: url("../img/2018-04-17_17-39-23.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 400px;
+  height: 240px;
+  margin-right: 20px; }
+
 .slick-prev {
   background: url("../img/ar.png") no-repeat 50% 50%;
   font-size: 0;
@@ -198,7 +209,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  outline: none !important; }
+  outline: none !important;
+  }
 
 .sli-but:hover {
   color: #370a63;
@@ -395,18 +407,55 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 20px; }
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  }
 
 .right-fot:hover {
   background-color: white;
   color: black;
-  cursor: pointer; }
+  cursor: pointer;
+  text-decoration: none; }
+
+.contect-but {
+  text-decoration: none; }
 
 @media (max-width: 575.98px) {
   .mac {
     display: none; }
   .info {
     display: block; }
+  .pic_info {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center; }
+  .slick-prev {
+    display: none; }
+  .slick-next {
+    display: none; }
+  #third-block {
+    display: none; } }
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .mac {
+    display: none; }
+  .info {
+    display: block; }
+  .pic_info {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center; }
+  .slick-prev {
+    display: none; }
+  .slick-next {
+    display: none; }
+  #third-block {
+    display: none; } }
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .mac {
+    display: none; }
   .pic_info {
     margin-top: 100px;
     display: flex;
