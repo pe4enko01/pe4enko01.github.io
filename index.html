@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<div id="first-block">
+    <div class="parallax-window parallax-img" data-parallax="scroll" data-parallax="scroll" data-z-index="0" data-image-src="img/bg.png">
+        <div class="container first-con">
+            <div class="menu">
+                <div class="menu-comp" id="fof">Главная</div>
+                <div class="menu-comp">Раборы</div>
+                <div class="menu-comp">Клалькулятор услуг</div>
+                <div class="menu-comp">Контакты</div>
+            </div>
+            <div class="pic_info">
+                <img class="mac" src="img/mac.png">
+
+                <div class="info">
+                    <h1>Веб-разработчик</h1>
+                    <h2>Бровко Иван</h2>
+                    <p>Верстка на HTML/CSS/JS <br>
+                        Разработка сайтов под ключ</p>
+                    <div class="but" id="wacth">
+                        Смотреть
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="sec-block">
+    <div class="sec-word-line">
+        <div class="sec-word">Последние работы</div>
+        <div class="sec-line"></div>
+    </div>
+
+        <!--Слайдер -->
+
+    <div class="container sec-slairer">
+        <div class="multiple-items">
+            <div class="fifs-sl">
+                <div class="sli-img">
+                    <a href="site/Cars/index.html" class="sli-but">
+                        Смотреть
+                    </a>
+                </div>
+            </div>
+            <div class="fifs-sl-3">
+                <div class="sli-img">
+                    <a href="site/lp87/index.html" class="sli-but">
+                        Смотреть
+                    </a>
+                </div>
+            </div>
+            <div class="fifs-sl-2">
+                <div class="sli-img">
+                        <a href="site/port/index.html" class="sli-but">
+                            Смотреть
+                        </a>
+                </div>
+            </div>
+            <div class="fifs-sl-4">
+                <div class="sli-img">
+                    <a href="site/try/index.html" class="sli-but">
+                        Смотреть
+                    </a>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <!--Слайдер-->
+
+</div>
+
+<div id="third-block">
+    <div class="parallax-window parallax-img2" data-parallax="scroll" data-parallax="scroll" data-speed="0.1" data-z-index="0" data-image-src="img/294881.png">
+
+        <div class="sec-word-line">
+            <div class="sec-word-2">Калькулятор услуг</div>
+
+        </div>
+        <div class="calc">
+            <div class="tabs">
+                <div class="tab-left active" id="tab-lefts">Лендинг</div>
+                <div class="tab-right" id="rights-lefts">Многостраничник</div>
+
+            </div>
+            <div class="blocks" id="blocks-block">
+                <div class="blocks-title ">Количесво блоков</div>
+                <input type="number" class="counter" id="couter-block">
+            </div>
+            <div class="blocks" id="pages-block">
+                <div class="blocks-title">Количесво страниц </div>
+                <input type="number" class="counter" id="couter-pages">
+            </div>
+
+            <div class="addiction">
+                <div class="addiction-title">Дополнительно</div>
+                <div class="addiction-block">
+                    <label class="checkbox-2">
+                        <input type="checkbox" class="checkbox" id="changes-check">
+                        <span></span>
+                    </label>
+                    Возможность редактировать текст на сайте
+                </div>
+                <div class="addiction-block">
+                    <!--Куруглый четбокс-->
+                    <label class="checkbox-2">
+                        <input type="checkbox" class="checkbox" id="changes-cms">
+                        <span></span>
+                    </label>
+                    Установка на CMS
+                </div>
+            </div>
+            <div class="total ">
+                Общая стоимость
+                <div id="total-value">0</div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<div class="forse-block">
+    <div class="parallax-window parallax-img3" data-parallax="scroll" data-parallax="scroll" data-speed="0.1" data-z-index="0" data-image-src="img/39366.png">
+        <div class="fors-block">
+            <div class="circk">
+                <img src="img/up.png">
+            </div>
+        </div>
+        <div class="container">
+            <div class="fotter">
+                <div class="left-fot">
+                    Веб-разработчик <br>
+                    <span>Бровко Иван </span>
+                </div>
+
+                    <a href="https://vk.com/id21402958" class="right-fot">Связаться</a>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script type="text/javascript" src="js/parallax.min.js"></script>
+<script type="text/javascript" src="js/scrpt.js"></script>
+</body>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.multiple-items').slick({
+            infinite: true,
+            slidesToShow: 2,
+            slidesToScroll: 2,
+        });
+
+        var main = $(".menu-comp");
+        var butUp = $(".circk");
+        var wacth = $("#wacth");
+
+        main.eq(1).on('click',function () {
+            $("html, body").animate({scrollTop:600},700);
+        });
+        wacth.on('click',function () {
+            $("html, body").animate({scrollTop:600},700);
+        });
+        main.eq(2).on('click',function () {
+            $("html, body").animate({scrollTop:1200},700);
+        });
+        main.eq(3).on('click',function () {
+            $("html, body").animate({scrollTop:1500},700);
+        });
+        butUp.on('click',function () {
+            $("html, body").animate({scrollTop:0},700);
+        });
+    });
+
+
+
+</script>
+<!--<script>-->
+
+    <!--var main =  $("#main");-->
+    <!--var butUp = $(".fot-up");-->
+    <!--var but = $("#form-button");-->
+    <!--var popup =$(".popup");-->
+    <!--var naeb = $(".naeb");-->
+
+    <!--but.on('click',function () {-->
+        <!--popup.css("display","block");-->
+    <!--});-->
+
+    <!--naeb.on('click',function () {-->
+        <!--popup.css("display","none");-->
+    <!--});-->
+
+   <!---->
+
+    <!--main.on('click',function () {-->
+        <!--$("html, body").animate({scrollTop:1000},900);-->
+    <!--});-->
+
+    <!--butUp.on('click',function () {-->
+        <!--$("html, body").animate({scrollTop:0},900);-->
+    <!--});-->
+<!--</script>-->
+
+</html>
+
