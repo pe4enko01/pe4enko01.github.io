@@ -114,7 +114,7 @@ body {
 .fifs-sl-2 {
   display: flex;
   padding: 0px 0px 0 0px;
-  background-image: url("../img/2018-04-17_17-39-23.png");
+  background-image: url("../img/2018-04-20_18-33-43.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -209,8 +209,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  outline: none !important;
-  }
+  outline: none !important; }
 
 .sli-but:hover {
   color: #370a63;
@@ -409,8 +408,7 @@ body {
   align-items: center;
   font-size: 20px;
   color: white;
-  text-decoration: none;
-  }
+  text-decoration: none; }
 
 .right-fot:hover {
   background-color: white;
