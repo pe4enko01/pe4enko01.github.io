@@ -366,7 +366,7 @@
             </div>
             <div class="col-7 fors-col">
                 <div class="fors-block-word">
-                    <p>Курс "Начинающий вобдитель!"</p>
+                    <p>Курс "Начинающий водитель!"</p>
                 </div>
                 <div class="fors-line">
 
@@ -379,13 +379,13 @@
                     получить теоретические знания, <br> которые вы сразу можете применять на практике. <br><br>
 
                         1-ый этап – подготовка на специально подготовленных,<br>
-                        зарегистрираваных как специальное транспортное средство<br>
+                        зарегистрираванных как специальное транспортное средство<br>
                         автомобилях . Всё происходит на учебном автомобиле.<br>
                         Вы узнаете много полезного материала, который сможете применить<br>
                         сразу после первого занятия.<br>
                         2-ой этап - на вашем автомобиле. Занятия проходят каждый день по 2,5<br>
                         часа. Вам необходимо наработать чувство «габаритов» собственного<br>
-                        автомобиля, освоить маневрирование, в ограниченом пространстве,<br>
+                        автомобиля, освоить маневрирование, в ограниченном пространстве,<br>
                         маневрирование задним ходом и что архиважно для начинающего<br>
                         водителя – варианты парковок.<br>
                         3-ий этап - город. Задача научить начинающего водителя спокойно<br>
@@ -489,7 +489,7 @@
 <div id="six-block">
     <div class="container">
         <div class="trid-word">
-            <div class="wo"> <span>КУРСЫ</span> </div>
+            <div class="wo"> <span>ОТЗЫВЫ</span> </div>
             <div class="lin"></div>
         </div>
 
@@ -704,24 +704,33 @@
 
     var main =  $("#main");
     var butUp = $(".fot-up");
-    var but = $("#form-button");
+    var but = $(".fors-button");
     var popup =$(".popup");
     var naeb = $(".naeb");
+    var menu = $(".menu-words");
 
-    but.on('click',function () {
+    but.eq(0).on('click',function () {
         popup.css("display","block");
     });
-
+    but.eq(1).on('click',function () {
+        popup.css("display","block");
+    });
     naeb.on('click',function () {
         popup.css("display","none");
     });
 
 
 
-    main.on('click',function () {
-        $("html, body").animate({scrollTop:1000},900);
+    menu.eq(2).on('click',function () {
+        $("html, body").animate({scrollTop:2400},900);
     });
 
+    menu.eq(3).on('click',function () {
+        $("html, body").animate({scrollTop:4900},900);
+    });
+    menu.eq(4).on('click',function () {
+        $("html, body").animate({scrollTop:6000},900);
+    });
     butUp.on('click',function () {
         $("html, body").animate({scrollTop:0},900);
     });
