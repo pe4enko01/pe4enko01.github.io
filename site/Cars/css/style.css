@@ -245,6 +245,7 @@ body {
   flex-direction: column;
   align-items: center;
   color: white;
+  margin-top: 0px;
   margin-bottom: 70px; }
   .trid-word .wo {
     font-size: 44px;
@@ -284,7 +285,7 @@ body {
 
 #fores-block {
   background-color: white;
-  height: 2000px;
+  height: 1800px;
   padding-top: 70px; }
 
 .fors-img {
@@ -363,6 +364,7 @@ body {
   width: 100%; }
 
 #six-block {
+  padding-top: 100px;
   background-color: white;
   height: 640px; }
 
@@ -594,7 +596,9 @@ body {
   height: 1120px;
   width: 100%;
   z-index: -1; }
-
+.la{
+  margin-top: 80px;
+}
 .form-block-pop {
   border: 1px solid white;
   width: 900px;
@@ -605,7 +609,9 @@ body {
   justify-content: space-between;
   display: flex;
   color: black; }
-
+.fors-col{
+  margin-bottom: 150px;
+}
 @media (min-width: 1200px) {
   .container {
     max-width: 1000px; } }
