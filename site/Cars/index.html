@@ -250,7 +250,7 @@
                         :
                     </div>
                     <div class="fig-1">
-                        <div class="fig-bord" id="hr">
+                        <div class="fig-bord" id="hr2">
                             2
                         </div>
 
@@ -259,7 +259,7 @@
                         :
                     </div>
                     <div class="fig-1">
-                        <div class="fig-bord" id="min">
+                        <div class="fig-bord" id="min2">
                             00
                         </div>
 
@@ -268,7 +268,7 @@
                         :
                     </div>
                     <div class="fig-1">
-                        <div class="fig-bord" id="sec">
+                        <div class="fig-bord" id="sec2">
                             00
                         </div>
 
@@ -577,7 +577,7 @@
                         :
                     </div>
                     <div class="fig-1">
-                        <div class="fig-bord" id="hr">
+                        <div class="fig-bord" id="hr3">
                            2
                         </div>
 
@@ -586,7 +586,7 @@
                         :
                     </div>
                     <div class="fig-1">
-                        <div class="fig-bord" id="min">
+                        <div class="fig-bord" id="min3">
                             00
                         </div>
 
@@ -595,7 +595,7 @@
                         :
                     </div>
                     <div class="fig-1">
-                        <div class="fig-bord" id="sec">
+                        <div class="fig-bord" id="sec3">
                             00
                         </div>
 
@@ -733,6 +733,13 @@
     var hr = document.getElementById("hr");
     var min = document.getElementById("min");
     var sec = document.getElementById("sec");
+    var hr2 = document.getElementById("hr2");
+    var min2 = document.getElementById("min2");
+    var sec2 = document.getElementById("sec2");
+    var hr3 = document.getElementById("hr3");
+    var min3 = document.getElementById("min3");
+    var sec3 = document.getElementById("sec3");
+
     var hrTimer = 2;
     var minTimer = 0;
     var secTimer = 0;
@@ -747,12 +754,31 @@
             hr.innerHTML = hoursNubmer;
             min.innerHTML = minitsNubmer;
             sec.innerHTML = secondsNubmer;
+            hr2.innerHTML = hoursNubmer;
+            min2.innerHTML = minitsNubmer;
+            sec2.innerHTML = secondsNubmer;
+            hr3.innerHTML = hoursNubmer;
+            min3.innerHTML = minitsNubmer;
+            sec3.innerHTML = secondsNubmer;
             if(secondsNubmer < 10){
                 sec.innerHTML ="0" +  secondsNubmer;
             };
             if(secondsNubmer < 10){
                 min.innerHTML = "0" + minitsNubmer;
             };
+            if(secondsNubmer < 10){
+                sec2.innerHTML ="0" +  secondsNubmer;
+            };
+            if(secondsNubmer < 10){
+                min2.innerHTML = "0" + minitsNubmer;
+            };
+            if(secondsNubmer < 10){
+                sec3.innerHTML ="0" +  secondsNubmer;
+            };
+            if(secondsNubmer < 10){
+                min3.innerHTML = "0" + minitsNubmer;
+            };
+
             totalsec--;
         },1000)
     };
