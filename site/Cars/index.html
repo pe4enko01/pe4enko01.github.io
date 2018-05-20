@@ -63,16 +63,16 @@
                     </div>
                     <div class="fig-1">
                         <div class="fig-bord" id="hr">
-                            12
+                            2
                         </div>
 
                     </div>
                     <div class="points">
                         :
                     </div>
-                    <div class="fig-1" id="min">
-                        <div class="fig-bord">
-                            12
+                    <div class="fig-1" >
+                        <div class="fig-bord" id="min">
+                            00
                         </div>
 
                     </div>
@@ -81,7 +81,7 @@
                     </div>
                     <div class="fig-1">
                         <div class="fig-bord" id="sec">
-                            12
+                            00
                         </div>
 
                     </div>
@@ -747,9 +747,16 @@
             hr.innerHTML = hoursNubmer;
             min.innerHTML = minitsNubmer;
             sec.innerHTML = secondsNubmer;
+            if(secondsNubmer < 10){
+                sec.innerHTML ="0" +  secondsNubmer;
+            };
+            if(secondsNubmer < 10){
+                min.innerHTML = "0" + minitsNubmer;
+            };
             totalsec--;
         },1000)
-    }
+    };
+    timer();
 </script>
 
 </html>
